@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first';
+  uname=new FormControl('')
+
+  updateName()
+  {
+    this.uname.setValue('Amitava')
+  }
+
 }
